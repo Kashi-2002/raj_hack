@@ -2,9 +2,9 @@
 
 import React, { useState, useRef } from 'react';
 // import './App.css';
-import { Link } from 'react-router-dom';
-// import Login from './components/Login';
-// import Signup from './components/Signup';
+// import { Link } from 'react-router-dom';
+import Login from './components/Pages/Login';
+import Signup from './components/Pages/Signup';
 // import User from './User';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Police from './components/police/Police';
@@ -20,8 +20,8 @@ return(
   // <Login/>
   <Router>
     <Routes>
-    {/* <Route path="/" exact element={<Login />} /> */}
-    {/* <Route path="/signup" element={<Signup />} /> */}
+    <Route path="/" exact element={<Login />} />
+    <Route path="/signup" element={<Signup />} />
     {/* <Route path="/user" element={<User />} /> */}
     <Route path='/police' element={<Police/>} />
     <Route path='/police/profile' element={
